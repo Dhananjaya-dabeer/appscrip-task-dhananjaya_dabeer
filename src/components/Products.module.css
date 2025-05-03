@@ -1,0 +1,21 @@
+.productsCardParent {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 30;
+  column-gap: 30;
+  padding: 20 80 30 80;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+}
+
+@media (max-width: 410) {
+  .productsCardParent {
+    padding: 0;
+  }
+}

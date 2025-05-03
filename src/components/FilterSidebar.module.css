@@ -1,0 +1,144 @@
+.filters_container {
+  min-width: 250px;
+  padding: 20px 20px 20px 80px;
+  background-color: #fff;
+}
+
+.filters_title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.filter_section {
+  margin-bottom: 20px;
+}
+
+.filter_option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.expandAndCompress {
+  display: flex;
+  justify-content: space-between;
+  span {
+    cursor: pointer;
+  }
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  span {
+    cursor: pointer;
+  }
+}
+.filter_option input[type="checkbox"],
+.filter_option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #000;
+}
+
+.filter_option label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.unselect_all {
+  color: #666;
+  font-size: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+
+.unselect_all:hover {
+  color: #000;
+}
+
+.filter_divider {
+  border: none;
+  border-top: 1px solid #eaeaea;
+  margin: 20px 0;
+}
+
+.filters_container2 {
+  display: none;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  right: 5%;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.filters_title_mobile {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.filter_section_mobile {
+  margin-bottom: 24px;
+}
+
+.filter_option_mobile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter_input_mobile {
+  margin-right: 12px;
+  accent-color: #000;
+  width: 20px;
+  height: 20px;
+}
+
+.filter_label_mobile {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.unselect_all_mobile {
+  color: #666;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 12px 0;
+  text-decoration: underline;
+}
+
+.filter_divider_mobile {
+  border: none;
+  border-top: 1px solid #eaeaea;
+  margin: 24px 0;
+}
+
+.crossParent {
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 750) {
+  .filters_container {
+    display: none;
+  }
+  .filters_container2 {
+    display: block;
+  }
+}

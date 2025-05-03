@@ -1,0 +1,21 @@
+.parent {
+  display: none;
+}
+
+.pagePath {
+  padding: 10 20;
+  display: flex;
+  gap: 4;
+  .home {
+    color: #bfc8cd;
+  }
+  .shop {
+    color: #252020;
+  }
+}
+
+@media (max-width: 768) {
+  .parent {
+    display: inline-block;
+  }
+}
