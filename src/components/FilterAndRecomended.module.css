@@ -1,5 +1,5 @@
 .parent {
-  padding: 0 80;
+  padding: 0 80px;
 }
 
 .filterBar {
@@ -7,7 +7,7 @@
   justify-content: space-between;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 30 20 30 0;
+  padding: 30px 20px 30px 0px;
 }
 
 .loader {
@@ -17,6 +17,7 @@
   border: 4px solid #514b82;
   animation: l20-1 0.8s infinite linear alternate, l20-2 1.6s infinite linear;
 }
+
 @keyframes l20-1 {
   0% {
     clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
@@ -88,6 +89,7 @@
     );
   }
 }
+
 @keyframes l20-2 {
   0% {
     transform: scaleY(1) rotate(0deg);
@@ -102,52 +104,56 @@
     transform: scaleY(-1) rotate(-135deg);
   }
 }
+
 .totalItems_hidefilter {
   display: flex;
   align-items: center;
-  gap: 40;
-  .hideFilter {
-    display: flex;
-    align-items: center;
-    gap: 5;
-    color: #888792;
-    cursor: pointer;
-  }
-
-  .hideFilter :hover {
-    text-decoration: underline;
-  }
-  .items {
-    p {
-      font-weight: bold;
-    }
-  }
+  gap: 40px;
 }
+
+.totalItems_hidefilter .hideFilter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #888792;
+  cursor: pointer;
+}
+
+.totalItems_hidefilter .hideFilter:hover {
+  text-decoration: underline;
+}
+
+.totalItems_hidefilter .items p {
+  font-weight: bold;
+}
+
 .filter {
   display: none;
 }
-.recomended {
-  select {
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
+
+.recomended select {
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 750px) {
   .parent {
     padding: 0;
   }
+
   .filterBar {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
-    padding: 10 30;
+    padding: 10px 30px;
   }
+
   .totalItems_hidefilter {
     display: none;
   }
+
   .filter {
     display: inline-block;
   }

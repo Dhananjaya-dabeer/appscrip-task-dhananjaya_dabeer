@@ -24,18 +24,19 @@
 .expandAndCompress {
   display: flex;
   justify-content: space-between;
-  span {
-    cursor: pointer;
-  }
+}
+.expandAndCompress span {
+  cursor: pointer;
 }
 
 .filterHeader {
   display: flex;
   justify-content: space-between;
-  span {
-    cursor: pointer;
-  }
 }
+.filterHeader span {
+  cursor: pointer;
+}
+
 .filter_option input[type="checkbox"],
 .filter_option input[type="radio"] {
   margin-right: 10px;
@@ -134,7 +135,7 @@
   justify-content: end;
 }
 
-@media (max-width: 750) {
+@media (max-width: 750px) {
   .filters_container {
     display: none;
   }

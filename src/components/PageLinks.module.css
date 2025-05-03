@@ -3,18 +3,20 @@
 }
 
 .pagePath {
-  padding: 10 20;
+  padding: 10px 20px;
   display: flex;
-  gap: 4;
-  .home {
-    color: #bfc8cd;
-  }
-  .shop {
-    color: #252020;
-  }
+  gap: 4px;
 }
 
-@media (max-width: 768) {
+.pagePath .home {
+  color: #bfc8cd;
+}
+
+.pagePath .shop {
+  color: #252020;
+}
+
+@media (max-width: 768px) {
   .parent {
     display: inline-block;
   }

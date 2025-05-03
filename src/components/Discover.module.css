@@ -1,43 +1,45 @@
 .parent {
-  padding: 50 0;
+  padding: 50px 0;
   margin: auto;
-  width: 750;
+  width: 750px;
 }
+
 .heading {
   font-size: xx-large;
-  h2 {
-    text-align: center;
-    font-weight: 400;
-  }
 }
-.description {
-  p {
-    line-height: 2;
-    text-align: center;
-    font-size: 22;
-    font-weight: 400;
-  }
+.heading h2 {
+  text-align: center;
+  font-weight: 400;
 }
+
+.description p {
+  line-height: 2;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+
 @media (max-width: 768px) {
   .parent {
-    padding: 30 10;
+    padding: 30px 10px;
     margin: auto;
     width: auto;
   }
+
   .heading {
-    font-size: 17;
-    padding-bottom: 25;
-    h2 {
-      text-align: center;
-      font-weight: 400;
-    }
+    font-size: 17px;
+    padding-bottom: 25px;
   }
-  .description {
-    p {
-      line-height: 1.5;
-      text-align: center;
-      font-size: 13;
-      font-weight: 400;
-    }
+
+  .heading h2 {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .description p {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
   }
 }

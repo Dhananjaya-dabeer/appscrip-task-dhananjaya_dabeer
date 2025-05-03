@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  row-gap: 30;
-  column-gap: 30;
-  padding: 20 80 30 80;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 20px 80px 30px 80px;
 }
+
 .loader {
   display: flex;
   justify-content: center;
@@ -14,7 +15,7 @@
   width: 100%;
 }
 
-@media (max-width: 410) {
+@media (max-width: 410px) {
   .productsCardParent {
     padding: 0;
   }

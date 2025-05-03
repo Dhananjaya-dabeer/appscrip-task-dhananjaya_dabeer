@@ -1,5 +1,5 @@
 .parent {
-  padding: 0 80;
+  padding: 0 80px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -8,30 +8,35 @@
   justify-content: space-between;
   padding-top: 36px;
   align-items: center;
-  #threeLines {
-    display: none;
-  }
 }
+.header #threeLines {
+  display: none;
+}
+
 .logo {
-  width: 150;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: end;
 }
+
 .icons {
   display: flex;
   align-items: center;
-  gap: 5;
+  gap: 5px;
 }
+
 .icons :global(svg) {
   cursor: pointer;
   transition: transform 0.2s ease, color 0.2s ease;
 }
+
 .icons :global(svg):hover {
   transform: scale(1.5);
   color: aqua;
   font-weight: bold;
 }
+
 .language {
   outline: none;
   border: none;
@@ -47,64 +52,73 @@
 .navLinks {
   display: flex;
   justify-content: space-between;
-  min-width: 100;
-  max-width: 400;
+  min-width: 100px;
+  max-width: 400px;
   margin: auto;
-  padding: 50 0 15 0;
+  padding: 50px 0 15px 0;
+}
 
-  a {
-    font-family: "Simplon Norm";
-    text-decoration: none;
-    color: inherit;
-  }
-  a:hover {
-    color: rgb(115, 190, 190);
-    text-decoration: underline;
-    transition: transform 0.2s ease;
-    transform: scale(1.2);
-  }
+.navLinks a {
+  font-family: "Simplon Norm";
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLinks a:hover {
+  color: rgb(115, 190, 190);
+  text-decoration: underline;
+  transition: transform 0.2s ease;
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
   .parent {
-    padding: 0 20;
+    padding: 0 20px;
   }
 
   .header {
     display: flex;
     justify-content: space-between;
-    padding: 10 0 10 0;
+    padding: 10px 0 10px 0;
     align-items: center;
-    #appLogo {
-      width: 20;
-      height: 20;
-    }
   }
+
+  .header #appLogo {
+    width: 20px;
+    height: 20px;
+  }
+
   .appLogo_threeLines {
     display: flex;
     align-items: center;
-    gap: 2;
-    #threeLines {
-      display: inline-block;
-      width: 40;
-      height: 40;
-    }
+    gap: 2px;
   }
+
+  .appLogo_threeLines #threeLines {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+
   .logo {
     width: fit-content;
-    #logo {
-      width: 45;
-      height: 15;
-    }
   }
+
+  .logo #logo {
+    width: 45px;
+    height: 15px;
+  }
+
   .icons {
     display: flex;
     align-items: center;
-    gap: 5;
-    #cart {
-      display: none;
-    }
+    gap: 5px;
   }
+
+  .icons #cart {
+    display: none;
+  }
+
   .icons :global(svg) {
     cursor: pointer;
   }
